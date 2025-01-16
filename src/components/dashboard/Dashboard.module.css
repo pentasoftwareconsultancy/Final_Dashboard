@@ -1,0 +1,117 @@
+/* Container */
+.Container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  flex: 1; /* Ensures the dashboard takes up available space */
+  margin: -10px;
+  padding: 20px;
+  overflow-y: auto; /* Enable scrolling for overflow content */
+  background-color: var(--bg-color); /* Dynamic background color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+.Header {
+  margin-bottom: 20px;
+}
+
+.Header h2 {
+  margin: 0;
+  color: var(--text-color); /* Dynamic text color */
+  font-size: 24px;
+}
+
+.Header p {
+  margin: 5px 0 0;
+  color: var(--text-color); /* Dynamic text color */
+  font-size: 14px;
+}
+
+/* Stats */
+.Stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.Card {
+  background-color: var(--th-color); /* Dynamic background color */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Card h3 {
+  margin: 0;
+  color: var(--text-color); /* Dynamic text color */
+  font-size: 24px;
+}
+
+.Card p {
+  margin: 5px 0 0;
+  color: var(--text-color); /* Dynamic text color */
+  font-size: 14px;
+}
+
+/* Charts */
+.Charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.Chart {
+  background-color: var(--bg-color); /* Dynamic background color */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Chart h4 {
+  margin: 0 0 10px;
+  color: var(--text-color); /* Dynamic text color */
+}
+
+/* Activity */
+.Activity {
+  background-color: var(--bg-color); /* Dynamic background color */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.Activity h4 {
+  margin: 0 0 10px;
+  color: var(--text-color); /* Dynamic text color */
+}
+
+.Activity ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Activity ul li {
+  margin-bottom: 10px;
+  color: var(--text-color); /* Dynamic text color */
+  font-size: 14px;
+}
+
+.Activity ul li span {
+  color: var(--text-color); /* Dynamic text color */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .Stats {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .Charts {
+    grid-template-columns: 1fr;
+  }
+}

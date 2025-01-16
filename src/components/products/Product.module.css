@@ -1,0 +1,199 @@
+.Container {
+  padding: 20px;
+  margin: -10px;
+  background-color: var(--bg-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  flex: 1;
+  /* Ensure it takes available space */
+  overflow-y: auto;
+  /* Enable scrolling for long content */
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.Header h2 {
+  margin: 0;
+  color:var(--text-color);
+  font-size: 24px;
+  /* Ensure consistent heading sizes */
+}
+
+.AddButton {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color:var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.AddButton:hover {
+  background-color: #0056b3;
+}
+
+.TableContainer {
+  overflow-x: auto;
+  border-radius: 15px;
+}
+
+.Table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color:var(--bg-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.Table th,
+.Table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.Table th {
+  background-color: var(--bg-color);
+  color:var(--text-color);
+}
+
+.Table tr:hover {
+  background-color:var(--bg-color);
+}
+
+/* Dropdown Menu */
+.Dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.DropdownButton {
+  padding: 5px 10px;
+  background-color: var(--bg-color);
+  color:var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  /* Adjust font size */
+}
+
+.DropdownButton:hover {
+  background: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.DropdownMenu {
+  display: none;
+  position: absolute;
+  background-color: var(--bg-color);
+  min-width: 120px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.Dropdown:hover .DropdownMenu {
+  display: block;
+  /* Show the menu when the parent element is hovered */
+}
+
+.DropdownItem {
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.DropdownItem:hover {
+  background-color:var(--bg-color);
+  /* Change background on hover */
+}
+
+/* Popup Styles */
+.Popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.PopupContent {
+  background-color:var(--bg-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.PopupContent h3 {
+  margin-top: 0;
+}
+
+.PopupContent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.PopupContent label {
+  margin: 10px 0 5px;
+}
+
+.PopupContent input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.PopupContent button {
+  padding: 10px;
+  background-color: #007bff;
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.PopupContent button:hover {
+  background-color: #0056b3;
+}
+
+.PopupContent .CancelButton {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.PopupContent .CancelButton:hover {
+  background-color: #c82333;
+}
+
+/* Close Button */
+button[type="button"] {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color:var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="button"]:hover {
+  background-color: #e53935;
+}
